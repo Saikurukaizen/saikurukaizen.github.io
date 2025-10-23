@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaizen Fitbit Tracker - Plataforma para gestión de comunidades deportivas">
+    <meta name="keywords" content="fitness, comunidades, deportes, React, Laravel, full-stack, cyberpunk, Marc Sanchez">
+    <meta name="author" content="Marc Sanchez">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kaizen Fitbit Tracker | Portfolio">
+    <meta property="og:description" content="Plataforma full-stack con diseño futurista">
+    
+    <title>🏃 KAIZEN | Cyberpunk Fitbit Tracker</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-bar"></div>
+    <div class="cyber-bg"></div>
+    <div class="grid-overlay"></div>
+    
+    <!-- Data Streams -->
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🏃 KAIZEN</div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Galería</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
+            <li><a href="#author">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="KAIZEN FITNESS">KAIZEN FITNESS</h1>
+            <p class="subtitle">⚡ CYBERPUNK FITNESS TRACKER ⚡</p>
+            <p class="tagline">
+                Plataforma full-stack de próxima generación con Laravel 12, React 18 y TypeScript. 
+                Diseño Cyberpunk/Synthwave con animaciones holográficas y experiencia inmersiva.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="https://s5-api-production.up.railway.app" class="btn-cyber btn-primary" target="_blank">
+                    🚀 DEMO EN VIVO
+                </a>
+                <a href="https://s5-api-production.up.railway.app/api/documentation" class="btn-cyber btn-secondary" target="_blank">
+                    📚 API DOCS
+                </a>
+                <a href="https://github.com/Saikurukaizen/S5_API" class="btn-cyber btn-secondary" target="_blank">
+                    💻 GITHUB
+                </a>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">TypeScript</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">123</div>
+                    <div class="stat-label">Tests Passed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Endpoints</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2 class="section-title">✨ CARACTERÍSTICAS</h2>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <span class="feature-icon">🔐</span>
+                <h3>Auth OAuth2</h3>
+                <p>Sistema JWT Bearer con Laravel Passport. Tokens de 15 días, roles jerárquicos y revocación server-side.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="feature-icon">🏋️</span>
+                <h3>Gestión CRUD</h3>
+                <p>CRUD completo para disciplinas, comunidades y usuarios con modales Cyberpunk y confirmaciones.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="feature-icon">👥</span>
+                <h3>Comunidades</h3>
+                <p>Sistema de miembros con roles, estadísticas en tiempo real y gestión avanzada de grupos.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="feature-icon">📊</span>
+                <h3>Analytics</h3>
+                <p>Dashboard con gráficos Recharts. Rankings, distribuciones y métricas actualizadas en tiempo real.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="feature-icon">🛡️</span>
+                <h3>Permisos</h3>
+                <p>Control granular por roles. Validación en backend y frontend con guards personalizados.</p>
+            </div>
+            
+            <div class="feature-card fade-in">
+                <span class="feature-icon">🐳</span>
+                <h3>Docker & CI/CD</h3>
+                <p>Dockerizado completo. Deploy automatizado en Railway con GitHub Actions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="section">
+        <h2 class="section-title">📸 GALERÍA</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/00e6e6/0a0a0f?text=LOGIN+CYBERPUNK" alt="Login">
+                <div class="screenshot-info">
+                    <h3>🔐 Login Cyberpunk</h3>
+                    <p>Interface con efectos neon, animaciones holográficas y validación en tiempo real.</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/e6007a/0a0a0f?text=DASHBOARD+PRINCIPAL" alt="Dashboard">
+                <div class="screenshot-info">
+                    <h3>📊 Dashboard Principal</h3>
+                    <p>Vista con estadísticas, comunidades activas y Analytics en sidebar lateral.</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/7a00e6/0a0a0f?text=DISCIPLINES+CRUD" alt="Disciplines">
+                <div class="screenshot-info">
+                    <h3>🏋️ Gestión Disciplinas</h3>
+                    <p>CRUD con modales animados, confirmaciones y búsqueda en tiempo real.</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/00e6e6/0a0a0f?text=COMMUNITIES" alt="Communities">
+                <div class="screenshot-info">
+                    <h3>👥 Comunidades</h3>
+                    <p>Gestión completa con miembros, roles y estadísticas detalladas por grupo.</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/e6007a/0a0a0f?text=ANALYTICS+STATS" alt="Analytics">
+                <div class="screenshot-info">
+                    <h3>📈 Analytics Dashboard</h3>
+                    <p>Gráficos interactivos con rankings, distribuciones y métricas clave.</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card fade-in">
+                <img src="https://via.placeholder.com/600x400/7a00e6/0a0a0f?text=USERS+MANAGEMENT" alt="Users">
+                <div class="screenshot-info">
+                    <h3>⚙️ Gestión Usuarios</h3>
+                    <p>Panel admin con avatares, badges de roles y control total de permisos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tech Stack Section -->
+    <section id="tech" class="section">
+        <h2 class="section-title">🛠️ TECH STACK</h2>
+        <div class="tech-stack">
+            <div class="tech-item fade-in">
+                <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel">
+                <span>Laravel 12</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                <span>React 18</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript">
+                <span>TypeScript</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+                <span>MySQL 8</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker">
+                <span>Docker</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="assets/img/tailwind-css-logo-png_seeklogo-354675.png" alt="Tailwind">
+                <span>Tailwind</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://vitejs.dev/logo.svg" alt="Vite">
+                <span>Vite</span>
+            </div>
+            <div class="tech-item fade-in">
+                <img src="https://testing-library.com/img/octopus-64x64.png" alt="Testing">
+                <span>Testing</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Author Section -->
+    <section id="author" class="section">
+        <h2 class="section-title">👨‍💻 DESARROLLADOR</h2>
+        <div class="portfolio-card fade-in">
+            <img src="assets/img/img_20251022_150709.png" alt="Marc Sanchez" class="avatar">
+            <h2>MARC SANCHEZ</h2>
+            <p class="role">Full-Stack Developer | DevOps Enthusiast</p>
+            <p>
+                Desarrollador Full-Stack especializado en arquitecturas modernas y diseño Cyberpunk/Synthwave. 
+                Experiencia en Laravel, React, TypeScript, Docker y CI/CD.
+            </p>
+            <p>
+                Este proyecto demuestra capacidad para desarrollar aplicaciones escalables desde cero, 
+                implementando las mejores prácticas en diseño de APIs RESTful, arquitectura frontend 
+                y deployment automatizado con estética futurista.
+            </p>
+            
+            <div class="social-links">
+                <a href="https://github.com/Saikurukaizen" target="_blank" title="GitHub">
+                    <span>🐙</span>
+                </a>
+                <a href="https://linkedin.com/in/marcsanchez" target="_blank" title="LinkedIn">
+                    <span>💼</span>
+                </a>
+                <a href="mailto:marc@kaizen.dev" title="Email">
+                    <span>📧</span>
+                </a>
+                <a href="https://marcsanchez.dev" target="_blank" title="Portfolio">
+                    <span>🌐</span>
+                </a>
+            </div>
+            
+            <div class="cta-buttons" style="margin-top: 2rem;">
+                <a href="mailto:marc@kaizen.dev" class="btn-cyber btn-primary">
+                    💼 CONTRÁTAME
+                </a>
+                <a href="https://github.com/Saikurukaizen" class="btn-cyber btn-secondary" target="_blank">
+                    📂 MÁS PROYECTOS
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Marc Sanchez. Todos los derechos reservados.</p>
+        <p>
+            Desarrollado con ⚡ usando 
+            <a href="https://laravel.com" target="_blank">Laravel</a> + 
+            <a href="https://react.dev" target="_blank">React</a> + 
+            <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>
+        </p>
+        <p style="margin-top: 1rem;">
+            <a href="https://github.com/Saikurukaizen/S5_API" target="_blank">GitHub</a> | 
+            <a href="https://s5-api-production.up.railway.app/api/documentation" target="_blank">API Docs</a> | 
+            <a href="#home">⬆️ Volver Arriba</a>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
