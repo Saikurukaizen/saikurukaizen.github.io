@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallaxElements = document.querySelectorAll('.hero-content');
     parallaxElements.forEach(el => {
-        el.style.transform = `translateY(${scrolled * 0.3}px)`;
+        el.style.transform = `translateY(${scrolled * 0.15}px)`;
     });
 });
 

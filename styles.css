@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -405,7 +403,7 @@ nav {
 }
 
 .stat-number {
-    font-size: 3.5rem;
+    font-size: 2.3rem;
     font-weight: 900;
     background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
     background-clip: text;
@@ -442,6 +440,9 @@ nav {
     background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+section#features {
+     padding-top: 6rem;
+}
     text-transform: uppercase;
     letter-spacing: 3px;
     animation: neonPulse 2s infinite alternate;
@@ -712,12 +713,6 @@ nav {
 }
 
 /* Social Links */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
 
 .social-link {
     width: 60px;
