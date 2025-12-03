@@ -720,6 +720,70 @@ section#features {
 }
 
 /* Social Links */
+.social-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 230, 230, 0.1);
+    border: 2px solid var(--neon-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover::before {
+    opacity: 1;
+}
+
+.social-links a:hover {
+    border-color: transparent;
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 0 30px var(--neon-cyan), 0 10px 30px rgba(0, 230, 230, 0.3);
+}
+
+.social-links img {
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 0 4px var(--neon-cyan));
+    transition: filter 0.3s;
+}
+
+.social-links a:hover img {
+    filter: drop-shadow(0 0 10px var(--neon-cyan)) drop-shadow(0 0 15px var(--neon-pink));
+}
+
+#mail-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 4px var(--neon-cyan));
+    transition: filter 0.3s;
+}
+
+.social-links a:hover #mail-icon {
+    filter: drop-shadow(0 0 10px var(--neon-cyan)) drop-shadow(0 0 15px var(--neon-pink));
+}
 
 .social-link {
     width: 60px;
@@ -1098,9 +1162,9 @@ footer a:hover {
     gap: 1rem;
   }
   
-  .github-icon, .linkedin-icon {
-    width: 1.8rem;
-    height: 1.8rem;
+  .github-icon, .linkedin-icon, .gdg-icon {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
   }
   
   .cta-buttons {
